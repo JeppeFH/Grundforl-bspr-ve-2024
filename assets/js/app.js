@@ -112,7 +112,3 @@ send formularen*/
 if (isValid) {
   form.submit();
 }
-
-function validate() {
-  return true;
-}
