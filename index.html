@@ -152,11 +152,26 @@
 
       <section class="form-container">
         <form class="form">
-          <input id="nameInput" type="text" placeholder="Your Name" />
-          <input id="mailInput" type="email" placeholder="Your E-mail" />
+          <input
+            id="nameInput"
+            type="text"
+            placeholder="Your Name"
+            required
+            minlength="2"
+          />
+          <input
+            id="mailInput"
+            type="email"
+            placeholder="Your E-mail"
+            minlength="6"
+            required
+          />
           <textarea
             id="textArea"
             placeholder="Describe your current project"
+            required
+            minlength="10"
+            maxlength="5000"
           ></textarea>
           <button id="submitInput" type="submit">Apply now</button>
         </form>
