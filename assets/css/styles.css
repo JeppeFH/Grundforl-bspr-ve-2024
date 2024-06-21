@@ -51,9 +51,10 @@ nav {
   max-width: 100%;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
+  background-color: blue;
   display: flex;
   margin: 0 auto;
+  padding: 0 143px;
 }
 
 nav ul {
@@ -72,12 +73,12 @@ nav ul {
 }
 
 .nav-links a {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: white;
 }
 
-.nav-links a:hover {
+.nav-links a:not(.btn-contact):hover {
   color: black;
   transition: all 250ms ease-in-out;
 }
@@ -108,11 +109,20 @@ nav i {
 .btn-contact:hover {
   background-color: #181c21;
   transition: all 250ms ease-in-out;
+  color: white;
 }
 
 .nav-links a {
   display: inline-block;
   position: relative;
+}
+
+nav ul li:nth-of-type(5) {
+  margin-left: 306px;
+}
+
+nav ul li:nth-of-type(1) {
+  margin-left: 213px;
 }
 
 .nav-links a:not(.btn-contact)::after {
@@ -183,7 +193,7 @@ nav i {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 768px;
+  min-height: 768px;
 }
 
 .hero h1 {
