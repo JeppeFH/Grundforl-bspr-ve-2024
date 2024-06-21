@@ -289,11 +289,50 @@ nav ul li:nth-of-type(1) {
   padding: 0 143px;
 }
 
+.powerfull-features h2 {
+  margin-bottom: 27px;
+  padding-top: 75px;
+}
+
+.powerfull-features p {
+  margin-bottom: 85px;
+  text-align: center;
+}
+
 .grid-gallery-container {
-  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  padding-bottom: 119px;
+}
+
+.grid-gallery-container img:nth-of-type(1) {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.grid-gallery-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.smallImg {
+  border: 3px solid transparent;
+}
+
+.smallImg:hover,
+.smallImg.active {
+  border: 3px solid red;
+}
+
+.smallImg.active {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*Section [Apply now]*/
@@ -467,6 +506,29 @@ footer {
 }
 
 /*Responsive*/
+@media screen and (max-width: 800px) {
+  footer {
+    padding: 61px 143px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left-container figure {
+    margin-bottom: 61px;
+  }
+
+  /*Section [Apply now]*/
+  .form-container {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .apply-now h3:nth-of-type(1) {
+    padding-top: 30px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   /*Heading and paragraph sizes*/
   h1 {
@@ -501,10 +563,23 @@ footer {
   }
 
   /*Section [Powerfull features]*/
+  .powerfull-features h2 {
+    margin-bottom: 20px;
+    padding-top: 61px;
+  }
 
-  /*Section [Apply now]*/
+  .powerfull-features p {
+    margin-bottom: 50px;
+  }
+
+  .grid-gallery-container {
+    padding-bottom: 100px;
+  }
 
   /*Footer*/
+  .resources ul li a {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -536,8 +611,45 @@ footer {
   /*Section [Hero]*/
 
   /*Section [Powerfull features]*/
+  .powerfull-features h2 {
+    margin-bottom: 15px;
+    padding-top: 50px;
+  }
+
+  .powerfull-features p {
+    margin-bottom: 40px;
+  }
+
+  .grid-gallery-container {
+    padding-bottom: 80px;
+  }
 
   /*Section [Apply now]*/
+  .form input,
+  .form textarea {
+    font-size: 14px;
+  }
+
+  .form button {
+    font-size: 14px;
+  }
 
   /*Footer*/
+  footer {
+    padding: 30px 143px;
+  }
+
+  .footer-left-container figure {
+    margin-bottom: 30px;
+  }
+
+  .resources ul li a {
+    font-size: 14px;
+  }
+
+  .footer-left-container figure i {
+    height: 40px;
+    width: 40px;
+    font-size: 14px;
+  }
 }
