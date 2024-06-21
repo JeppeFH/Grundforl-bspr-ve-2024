@@ -498,6 +498,7 @@ footer {
   color: black;
   text-align: center;
   align-content: center;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.344);
 }
 
 .footer-left-container figure i:hover {
