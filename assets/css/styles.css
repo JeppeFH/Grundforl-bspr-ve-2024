@@ -448,6 +448,7 @@ nav ul li:nth-of-type(1) {
   border: none;
   transition: all 250ms ease-in-out;
   cursor: pointer;
+  border-radius: 25px;
 }
 
 .form button:hover {
