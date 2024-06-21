@@ -16,36 +16,32 @@ body {
 
 /*Heading sizes*/
 h1 {
-  font-size: ;
+  font-size: 60px;
 }
 
 h2 {
-  font-size: ;
+  font-size: 52px;
 }
 
 h3 {
-  font-size: ;
+  font-size: 35px;
 }
 
 h4 {
-  font-size: ;
-}
-
-h5 {
-  font-size: ;
-}
-
-h6 {
-  font-size: ;
+  font-size: 16px;
 }
 
 p {
-  font-size: ;
+  font-size: 16px;
 }
 
 li,
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 /*Section [Navigation]*/
