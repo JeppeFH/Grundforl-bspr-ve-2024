@@ -147,17 +147,17 @@ nav i {
   color: black;
 }
 
-.nav-links a {
-  display: inline-block;
-  position: relative;
-}
-
 nav ul li:nth-of-type(5) {
   margin-left: 306px;
 }
 
 nav ul li:nth-of-type(1) {
   margin-left: 213px;
+}
+
+.nav-links a {
+  display: inline-block;
+  position: relative;
 }
 
 .nav-links a:not(.btn-contact)::after {
