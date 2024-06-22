@@ -49,7 +49,7 @@ for (let index = 0; index < smallImgs.length; index++) {
 }
 
 //FORM VALIDERING//
-let form = document.querySelector(".form");
+let form = document.querySelector(".formContainer");
 
 form.addEventListener("submit", function (event) {
   /*tilføjer event listener til form. Lytter specifikt efter "submit" event, 
