@@ -39,9 +39,7 @@ for (let index = 0; index < smallImgs.length; index++) {
      lille billede.*/
 
     /*Fjerne active "class" på alle img */
-    smallImgs.forEach((img) => {
-      img.classList.remove("active");
-    });
+    document.querySelector(".smallImg").classList.remove("active");
 
     /*Tilføje active "class" på det click event der er aktiv */
     data.target.classList.add("active");
