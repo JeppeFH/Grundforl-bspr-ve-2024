@@ -8,20 +8,19 @@ let navLinks = document.querySelector(".nav-links");
 der har class eller id*/
 
 burgerMenuOpen.addEventListener("click", () => {
-  /*Fortæller at der skal være en Click event listener på array'en*/
+  /*Fortæller at der skal være en Click event listener på literal*/
   navLinks.classList.add("active");
   burgerMenuOpen.classList.add("active");
   burgerMenuClose.classList.add("active");
-  /*Laver en classList på arrays for at manipulere class samtidig 
-  en add("active") på for så at kunne manipulere class i css. */
+  /*Laver en classList property for at tilføje klassen 
+  ("active"). */
 });
 
 burgerMenuClose.addEventListener("click", () => {
   navLinks.classList.remove("active");
   burgerMenuOpen.classList.remove("active");
   burgerMenuClose.classList.remove("active");
-  /*Laver et click event på burgermenuclose som remover active class ved 
-  click. */
+  /*Samme metode men omvendt */
 });
 
 //BILLEDE GALLERY //
